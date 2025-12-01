@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>social-media</title>
+</head>
+<body>
+    <header>
+        <div class="header-elements">
+            <div class="logo">
+                <img src="MOTO-image/logo.svg" alt="logo image">
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <div class="dropdown">
+                    <span>LISTING</span>
+                    <div class="dropdown-menu">
+                        <a href="LISTING/mini.html">LOW-CC</a>
+                        <a href="LISTING/medium.html">MEDIUM-CC</a>
+                        <a href="LISTING/big.html">BIG-CC</a>
+                        <a href="LISTING/all.html">ALL</a>
+                    </div>
+                </div>
+                <a href="about.html">ABOUT</a>
+                <a href="social.html">SOCIAL MEDIA</a>
+                <a class="contact" href="contact.html">CONTACT US!</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="page-elements">
+                <h1>SOCIAL-MEDIA PLATFORMS</h1>
+                <p>follow us on social media!</p>
+            </div>
+        </section>
+
+        <section class="social-media-section">
+            <div class="social-media">
+                <div class="social-media-container">
+
+                    <div class="social-media-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="">
+                        <h3>FACEBOOK</h3>
+                        <p>Join our community on facebook!</p>
+                        <a href="#">Follow Now</a>
+                    </div>
+
+                    <div class="social-media-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="">
+                        <h3>INSTAGRAM</h3>
+                        <p>Follow our page and stay updated on instagram!</p>
+                        <a href="#">Follow Now</a>
+                    </div>
+
+                    <div class="social-media-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="">
+                        <h3>WHATSAPP</h3>
+                        <p>Join our whatsapp community now!</p>
+                        <a href="#">Follow Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="social-media-catcher" >
+                <div class="-social-media-catcher-container">
+                    <div class="catcher-image">
+                        <img src="MOTO-image/social.png" alt="">
+                    </div>
+                    <div class="catcher-text">
+                        <h2>CONNECT WITH US ON SOCIAL MEDIA</h2>
+                    </div>  
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MOTORCYCLE STORE</h3>
+                <p>Your GO-TO store for used/new motorcycles and scooter!</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="social.html">Social Media</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+
+            <div class="footer-section">
+                <h4>Motorcycle Listings</h4>
+                <nav>
+                    <a href="LISTING/mini.html">Low-CC scooters</a>
+                    <a href="LISTING/medium.html">Medium-CC motorcycles</a>
+                    <a href="LISTING/big.html">Big-CC motorcycles</a>
+                    <a href="LISTING/all.html">All Listings</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="copy-rights">
+                <p>&copy; 2025 MOTORCYCLE STORE - All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <button onclick="backToTop()" id="back-to-top">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Top_Arrow.svg" alt="arrow to top">
+    </button>
+
+    <script>
+    function backToTop() {
+        window.scrollTo(0,0);
+    }
+
+    window.addEventListener('scroll', function(){
+        const button = document.getElementById('back-to-top');
+
+        if(window.scrollY>300){
+            button.classList.add('show');
+        } else{
+            button.classList.remove('show');
+        }
+    });
+    </script>
+</body>
+</html>
