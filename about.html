@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <div class="header-elements">
+            <div class="logo">
+                <img src="MOTO-image/logo.svg" alt="logo image">
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <div class="dropdown">
+                    <span>LISTING</span>
+                    <div class="dropdown-menu">
+                        <a href="LISTING/mini.html">LOW-CC</a>
+                        <a href="LISTING/medium.html">MEDIUM-CC</a>
+                        <a href="LISTING/big.html">BIG-CC</a>
+                        <a href="LISTING/all.html">ALL</a>
+                    </div>
+                </div>
+                <a href="about.html">ABOUT</a>
+                <a href="social.html">SOCIAL MEDIA</a>
+                <a class="contact" href="contact.html">CONTACT US!</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="page-elements">
+            <h1>ABOUT US</h1>
+            <p>Discover how our shop was created!</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-image">
+                <img src="MOTO-image/about.jpg" alt="">
+            </div>
+            <h1>Short Summary:</h1>
+            <p>We started small, selling mini scooters and a mix of random motorcycles just to test the waters. Over time, with more experience and a clearer vision, we improved our selection, learned the market, and slowly got introduced to the bigger world of motorcycle sales. What began as a small idea has grown into a serious passion-driven business that's still expanding every day.</p>
+            <h2>When did we open?</h2>
+            <p>We officially launched online in early 2025. Since then, we've been working nonstop to grow our inventory, improve our services, and build a solid reputation. We're still on the hunt for the perfect location to open our first physical store — but until then, we're fully committed to offering great bikes and reliable service online.</p>
+            <h2>Why choose us?</h2>
+            <p>It's simple: honesty. If you can genuinely find better prices somewhere else, then I'll be happy you got a good deal — even if it's not from us. But what we offer is fair pricing, straightforward communication, and a dedication to helping customers get the motorcycle that fits their needs, not just the one that's most expensive. We care about building trust, not squeezing every dollar.</p>
+        </section>
+
+        <section class="catcher">
+            <h1>With your love we grow!</h1>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MOTORCYCLE STORE</h3>
+                <p>Your GO-TO store for used/new motorcycles and scooter!</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="social.html">Social Media</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+
+            <div class="footer-section">
+                <h4>Motorcycle Listings</h4>
+                <nav>
+                    <a href="LISTING/mini.html">Low-CC scooters</a>
+                    <a href="LISTING/medium.html">Medium-CC motorcycles</a>
+                    <a href="LISTING/big.html">Big-CC motorcycles</a>
+                    <a href="LISTING/all.html">All Listings</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="copy-rights">
+                <p>&copy; 2025 MOTORCYCLE STORE - All Rights Reserved</p>
+        </div>
+
+    </footer>
+    
+    <button onclick="backToTop()" id="back-to-top">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Top_Arrow.svg" alt="arrow to top">
+    </button>
+
+    <script>
+    function backToTop() {
+        window.scrollTo(0,0);
+    }
+
+    window.addEventListener('scroll', function(){
+        const button = document.getElementById('back-to-top');
+
+        if(window.scrollY>300){
+            button.classList.add('show');
+        } else{
+            button.classList.remove('show');
+        }
+    });
+    </script>
+</body>
+</html>
