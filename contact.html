@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="header-elements">
+            <div class="logo">
+                <img src="MOTO-image/logo.svg" alt="logo image">
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <div class="dropdown">
+                    <span>LISTING</span>
+                    <div class="dropdown-menu">
+                        <a href="LISTING/mini.html">LOW-CC</a>
+                        <a href="LISTING/medium.html">MEDIUM-CC</a>
+                        <a href="LISTING/big.html">BIG-CC</a>
+                        <a href="LISTING/all.html">ALL</a>
+                    </div>
+                </div>
+                <a href="about.html">ABOUT</a>
+                <a href="social.html">SOCIAL MEDIA</a>
+                <a class="contact" href="contact.html">CONTACT US!</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="page-elements">
+            <h1>CONTACT US</h1>
+            <p>We will answer as soon as possible!</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/MessagesIcon.svg" alt="Message Icon">
+        <h2>SEND US A MESSAGE</h2>
+        <p>Need help? Have a question? Just want to say hi? We're here to help!</p>
+        
+        <div class="contact-elements">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your email">
+                <textarea placeholder="Your Message" rows="6"></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+
+            <div class="contact-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Phone_landline_old_in_classic_duotone_style.svg" alt="Call Icon">
+                <h3>Why not you give us a call?</h3>
+                <p>We're always happy to help you out!</p>
+                <a href="" >Click to call us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="quote-container">
+            <div class="quote-image">
+                <img src="MOTO-image/attracter.jpg" alt="">
+            </div>
+            <div class="quote-text">
+                <h2>TWO WHEELS MOVE THE SOUL WITH THE MOTORCYCLE</h2>
+            </div>  
+        </div>
+    </section>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MOTORCYCLE STORE</h3>
+                <p>Your GO-TO store for used/new motorcycles and scooter!</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="social.html">Social Media</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+
+            <div class="footer-section">
+                <h4>Motorcycle Listings</h4>
+                <nav>
+                    <a href="LISTING/mini.html">Low-CC scooters</a>
+                    <a href="LISTING/medium.html">Medium-CC motorcycles</a>
+                    <a href="LISTING/big.html">Big-CC motorcycles</a>
+                    <a href="LISTING/all.html">All Listings</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="copy-rights">
+                <p>&copy; 2025 MOTORCYCLE STORE - All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <button onclick="backToTop()" id="back-to-top">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Top_Arrow.svg" alt="arrow to top">
+    </button>
+
+    <script>
+    function backToTop() {
+        window.scrollTo(0,0);
+    }
+
+    window.addEventListener('scroll', function(){
+        const button = document.getElementById('back-to-top');
+
+        if(window.scrollY>300){
+            button.classList.add('show');
+        } else{
+            button.classList.remove('show');
+        }
+    });
+    </script>
+</body>
+</html>
